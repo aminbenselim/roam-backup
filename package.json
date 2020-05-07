@@ -14,7 +14,7 @@
     "rimraf": "^3.0.2"
   },
   "scripts": {
-    "start": "rimraf *.zip && rimraf *.png && node index.js",
+    "start": "rimraf *.png && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
