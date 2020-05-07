@@ -31,7 +31,7 @@ jobs:
           TIME: "${{ steps.time.outputs.time }}"
         run: |
           mkdir -p backups
-          for f in *.zip; do mv -- "$f" "backups/${f}.${TIME}.zip"
+          for f in *.zip; do mv -- "$f" "backups/${f}.${TIME}.zip"; done
       - name: Create commit and tag in release
         run: |
           git add ./backups
