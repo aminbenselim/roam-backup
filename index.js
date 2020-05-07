@@ -88,8 +88,8 @@ const main = async function () {
   if (!filename) {
     throw new Error("Couldn't find a file to upload, aborting");
   }
-  console.log(`Uploading ${filename} to S3`);
-  await uploadToS3(filename);
+//   console.log(`Uploading ${filename} to S3`);
+//   await uploadToS3(filename);
 };
 
 main();
