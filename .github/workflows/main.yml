@@ -27,7 +27,7 @@ jobs:
       - name: Create commit and tag in release
         run: |
           git add ./backups
-          git commit -C ${{github.}} --allow-empty
+          git commit -C ${{github.sha}} --allow-empty
       - name: Push to relase and upload new tag
         run: |
           git push origin release
